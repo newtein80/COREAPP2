@@ -1,0 +1,23 @@
+﻿# Common Layer
+
+This will contain all cross-cutting concerns.
+
+
+--
+
+
+복잡도가 높은 시스템일 수록 다양한 Concern 이 존재한다. 동기화, 예외, 에러처리, 보안, 지속성(Transaction), 자원 공유, 분산, 메모리 관리, 로깅* 등이 Concern 의 예가 될 수 있다.
+* Logging : 업데이트를 실시간으로 처리하지 않고 한꺼번에 모아 해결 할 때, 로그 형식으로 기록 후 처리
+
+
+출처: http://seulkom.tistory.com/18 [행복한 프로그래머]
+
+
+Crosscutting Concern을 분리 했을 때 장점
+1. 개발이 빨라진다. (개발인력간의 상호의존도가 떨어지므로)
+2. 변화가 쉽다. (해당 모듈만 수정하면 되므로)
+3. 코드 가독성이 증가한다. (다른 모듈을 볼 필요가 없으므로)
+4. 시스템의 안정성이 증가
+5. 시스템 성능이 향상
+
+출처: http://seulkom.tistory.com/18 [행복한 프로그래머]

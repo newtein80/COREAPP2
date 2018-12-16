@@ -1,0 +1,10 @@
+﻿# Domain Layer
+
+This will contain all entities, enums, exceptions, types and logic specific to the domain.
+여기에는 도메인과 관련된 모든 엔티티, 열거 형, 예외, 유형 및 로직이 포함됩니다.
+
+The Entity Framework related classes are abstract, and should be considered in the same light as .NET Core.
+Entity Framework 관련 클래스는 추상 클래스이므로 .NET Core와 동일한 측면에서 고려해야합니다.
+
+For testing, use an InMemory provider such as InMemory or SqlLite.
+테스트를 위해 InMemory 또는 SqlLite와 같은 InMemory 공급자를 사용하십시오.

@@ -1,0 +1,1 @@
+Scaffold-DbContext "Data Source=PARKJS\SQLEXPRESS;Initial Catalog=COREAPP;User ID=sa;Password=#skdlf12;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False" Microsoft.EntityFrameworkCore.SqlServer -OutputDir DataContext -Context "SystemDbContext" -table T_MENU_MASTER, T_COMMON_CODE -Force -UseDatabaseNames

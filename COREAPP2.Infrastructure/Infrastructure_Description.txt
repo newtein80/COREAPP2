@@ -1,0 +1,25 @@
+# Infrastructure Layer
+
+This layer contains classes for accessing external resources such as file systems, web services, smtp, and so on.
+이 계층은 파일 시스템, 웹 서비스, smtp 등과 같은 외부 리소스에 액세스하기위한 클래스를 포함합니다.
+
+# Key #
+These classes should be based on interfaces defined within the application layer.
+이러한 클래스는 응용 프로그램 계층 내에 정의 된 인터페이스를 기반으로해야합니다.
+
+# Persistence Layer
+When you use relational databases such as SQL Server, Oracle, or PostgreSQL, a recommended approach is to implement the persistence layer based on Entity Framework (EF).
+SQL Server, Oracle 또는 PostgreSQL과 같은 관계형 데이터베이스를 사용할 때는 Entity Framework (EF)를 기반으로 지속성 계층을 구현하는 것이 좋습니다.
+
+EF supports LINQ and provides strongly typed objects for your model, as well as simplified persistence into your database.
+EF는 LINQ를 지원하며 모델에 강력한 형식의 개체를 제공하고 데이터베이스에 단순화 된 지속성을 제공합니다.
+
+
+EF Core provides a way to map the domain model to the physical database without "contaminating" the domain model.
+EF Core는 도메인 모델을 "오염"시키지 않고 도메인 모델을 실제 데이터베이스에 매핑하는 방법을 제공합니다.
+
+It is pure .NET POCO code, because the mapping action is implemented in the persistence layer.
+매핑 동작이 지속성 계층에 구현되므로 순수한 .NET POCO 코드입니다.
+
+In that mapping action, you need to configure the fields-to-database mapping.
+해당 맵핑 조치에서 필드 대 데이터베이스 맵핑을 구성해야합니다.

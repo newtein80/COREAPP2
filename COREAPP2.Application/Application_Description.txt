@@ -1,0 +1,21 @@
+﻿# Application Layer
+
+This layer contains all application logic. It is dependent on the domain layer, but has no dependencies on any other layer or project.
+이 계층은 모든 응용 프로그램 논리를 포함합니다. 도메인 계층에 종속되지만 다른 계층이나 프로젝트에 종속되지 않습니다.
+
+This layer defines interfaces that are implemented by outside layers.
+이 계층은 외부 계층에 의해 구현되는 인터페이스를 정의합니다.
+
+For example, if the application need to access a notification service, a new interface would be added to application and an implementation would be created within infrastructure.
+예를 들어 응용 프로그램이 알림 서비스에 액세스해야하는 경우 새 인터페이스가 application에 추가되고 infrastructure 내에서 구현이 만들어집니다.
+
+
+
+https://docs.microsoft.com/en-us/dotnet/standard/modern-web-apps-azure-architecture/common-web-application-architectures
+The Application Core holds the business model, which includes entities, services, and interfaces. These interfaces include abstractions for operations that will be performed using Infrastructure, such as data access, file system access, network calls, etc. Sometimes services or interfaces defined at this layer will need to work with non-entity types that have no dependencies on UI or Infrastructure. These can be defined as simple Data Transfer Objects (DTOs).
+
+Application Core types
+- Entities (business model classes that are persisted)
+- Interfaces
+- Services
+- DTOs
