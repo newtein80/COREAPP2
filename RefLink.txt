@@ -25,3 +25,28 @@ http://www.plainionist.net/Implementing-Clean-Architecture/
 https://garywoodfine.com/generic-repository-pattern-net-core/
 
 http://www.taimila.com/blog/.net-solution-structure-of-an-enterprise-application/
+
+
+
+Docs
+Sqls
+Src
+	ApplicationCore
+		-- Core
+		   -- Entities
+		   -- EntitiesCommon
+		   -- ValueObject
+		-- Application
+		   -- IServices
+		   -- IRepositories
+		   -- Excpetions
+		   -- Specifications
+	   -- Common
+	Infrastructure
+		-- Services
+		-- Repositories
+		-- Configurations
+		-- DbContexts
+		-- AppIdenties
+	Presentation
+Tests
